@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #27394e;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 2.8rem;
+	margin-bottom: 1rem;
+}
+
+section form {
+	display: flex;
+	flex-direction: column;
+	min-width: 50%;
+	align-items: center;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1), 0 2rem 2rem rgba(0, 0, 0, 0.1);
+	padding: 5rem;
+	border-radius: 1rem;
+	margin: 2rem;
+	background-color: white;
+}
+
+input {
+	padding: 1rem;
+	margin: 1.5rem;
+	width: 25rem;
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: 0 0 3pt 2pt #cccfcf;
+	outline: none;
+}
+
+input:hover {
+	box-shadow: 0 0 3pt 2pt rgb(71, 199, 67);
+}
+
+form button {
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1), 0 2rem 2rem rgba(0, 0, 0, 0.1);
+	outline: none;
+	transition: 500ms;
+	font-size: 1.5rem;
+	background-color: #262d2f;
+	color: white;
+}
+
+form button:hover {
+	box-shadow: 0 0 3pt 2pt cornflowerblue;
+	cursor: pointer;
+}
+
+form button:active {
+	padding: 1.5rem;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-width: 100vw;
+	padding: 5rem;
+	border-radius: 1rem;
+	margin: 2rem;
+}
+
+ul li {
+	display: flex;
+	flex-direction: column;
+	min-width: 38rem;
+	min-height: 20rem;
+	background-color: white;
+	border-radius: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+}
+
+ul li span {
+	box-shadow: 0 0 3pt 2pt #cccfcf;
+	width: 90%;
+	padding: 2rem;
+	position: relative;
+	bottom: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.task-selected {
+	background-color: #262d2f;
+	color: white;
+	box-shadow: 0 0 3pt 2pt rgb(71, 199, 67);
+}
+
+.buttons {
+	display: flex;
+}
+
+.buttons button {
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1), 0 2rem 2rem rgba(0, 0, 0, 0.1);
+	outline: none;
+	transition: 500ms;
+	font-size: 1.5rem;
+	width: 15rem;
+	color: white;
+	cursor: pointer;
+}
+
+.buttons button:active {
+	padding: 1.5rem;
+}
+
+.delete {
+	background-color: #b12727;
+}
+
+.edit {
+	background-color: #2773b1;
+}
